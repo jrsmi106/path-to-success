@@ -85,7 +85,15 @@ h1, h2 {
     color: var(--white);
 }
 
+nav{
+    background-color: var(--yellow);
+    text-align: right;
+    top: 0;
+}
 
+nav ul{
+    list-style: none;
+}
 nav a{
     text-decoration: none;
     
@@ -93,17 +101,30 @@ nav a{
 nav li {
     background-color: var(--yellow);
     color: var(--darkgrey);
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+
+}
+header{
+    position: relative;
 }
 
-header{
+header, footer{
     background-color: var(--lavender);
     color: var(--white);
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    padding: 20px;
+    width: 100%;
 }
 header p{
     background-color: var(--pink);
     color: var(--white);
     text-align: center;
+    border-radius: 10px;
+    width: 100%;
 }
 
 
@@ -112,22 +133,111 @@ nav h2{
     font-size: 1.5em;
 
 }
+
+
  h2{
     font-size: 2em;
  }
 
  h3{
     font-size: 1.5em;
+    font-weight: bold;
+    color: var(--yellow);
  }
 
  h4{
     font-size: 1.15em;
+   
  }
 
- #section.services {
+ .services {
     background-color: var(--white);
+    color: ;
+    width: 25%;
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
  }
 
+ .services img{
+    align-items: center;
+ }
+
+ .services h4 {
+    color: var(--purple);
+
+ }
+
+ .services p {
+    color: var(--darkgrey);
+ }
+#why-choose-us{
+    background-color: var(--pink);
+    
+}
+
+#Personal {
+    
+    background-color: var(--teal);
+    border-radius: 10px;
+    width: 25%;
+    padding: 25px;
+    margin: 10px;
+}
+#Proven {
+   
+    background-color: var(--lavender);
+    border-radius: 10px;
+    width: 25%;
+    padding: 25px;
+    margin: 10px;
+}
+#Supportive{ 
+   
+    background-color: var(--yellow);
+    border-radius: 10px;
+    width: 25%;
+    padding: 25px;
+    margin: 10px;
+}
+#Flexible {
+
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 25%;
+    padding: 25px;
+    margin: 10px;
+}
+
+table {
+    background-color: var(--yellow);
+    color: var(--darkgrey);
+    
+}
+th{
+    padding: 10px;
+}
+td{
+    background-color: var(--white);
+    border: 1px solid var(--yellow);
+    padding: 10px;
+}
+
+#first-step {
+    background-color: var(--pink);
+    color: var(--white);
+}
+button{
+    background-color: var(--white);
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    font-family: "Inter";
+    font-weight: bold;
+    box-shadow: 2px 2px ;
+    text-transform: capitalize;
+
+}
 /* -------------------- ROOT VARIABLES --------------------------------------- */
 
 :root {
