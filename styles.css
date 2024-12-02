@@ -72,40 +72,23 @@ html{
 Body{
     font-family: "Inter";
     background-color: var(--purple);
+   
 
 }
 
+
 h1{
     font-size: 3em;
+    margin-bottom: 40px;
     
 }
 
 h1, h2 {
     font-family: "Kavoon";
     color: var(--white);
-}
+}   
 
-nav{
-    background-color: var(--yellow);
-    text-align: right;
-    top: 0;
-}
 
-nav ul{
-    list-style: none;
-}
-nav a{
-    text-decoration: none;
-    
-}
-nav li {
-    background-color: var(--yellow);
-    color: var(--darkgrey);
-    display: inline-block;
-    margin: 0;
-    padding: 10px;
-
-}
 header{
     position: relative;
 }
@@ -116,15 +99,43 @@ header, footer{
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px ;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
 }
 header p{
+    padding: 30px;
     background-color: var(--pink);
     color: var(--white);
     text-align: center;
-    border-radius: 10px;
-    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-style: italic;
+    z-index: -1;
+}
+
+nav{
+    
+    background-color: var(--yellow);
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    background-color: var(--yellow);
+    color: var(--darkgrey);
+    display: inline-block;
+    
+
+}
+nav a{
+    text-decoration: none;
+    
 }
 
 
@@ -137,6 +148,7 @@ nav h2{
 
  h2{
     font-size: 2em;
+   
  }
 
  h3{
@@ -147,18 +159,21 @@ nav h2{
 
  h4{
     font-size: 1.15em;
-   
+    font-family: "Inter";
+    font-weight: bold;   
+    margin-bottom: 10PX;
  }
 
  .services {
+    
     background-color: var(--white);
-    color: ;
-    width: 25%;
-    margin-top: 20px;
+    width: 1fr;
+    margin: 20px;
     text-align: left;
     padding: 20px;
     border-radius: 10px;
  }
+
 
  .services img{
     align-items: center;
@@ -171,6 +186,7 @@ nav h2{
 
  .services p {
     color: var(--darkgrey);
+    line-height: 1.5;
  }
 #why-choose-us{
     background-color: var(--pink);
@@ -254,6 +270,177 @@ button{
 
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+@media  screen and (min-width:450px) {
+
+.Our-Services{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+
+}
+
+    
+}
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media  screen and (min-width:620px) {
+    
+}
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+
+@media  screen and (min-width:950px) {
+    .Our-Services{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .25fr .10fr 1fr 1fr 1fr 1fr ;
+        margin: 10px;
+    
+    
+}
+
+    .main-heading{
+        grid-row: 1 / 1;
+        grid-column: 1 / 5 ;
+   
+}
+    .heading-1{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2 ;
+    
+}
+    .heading-2{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3 ;
+
+}
+    .heading-3{
+        grid-row: 2 / 3;
+        grid-column: 3/ 4 ;
+
+}
+
+    .heading-4{
+        grid-row: 2 / 3;
+        grid-column: 4/ 5 ;
+
+}
+
+    #serv-1{
+        grid-row: 3 / 4;
+        grid-column: 1/ 2 ;
+
+    }
+    #serv-2{
+        grid-row: 4 / 5;
+        grid-column: 1/ 2 ;
+
+    }
+
+    #serv-3{
+        grid-row: 5/ 6;
+        grid-column: 1/ 2 ;
+
+    }
+
+    #serv-4{
+        grid-row: 3 / 4;
+        grid-column: 2/ 3 ;
+    }
+
+    #serv-5{
+        grid-row: 4/ 5;
+        grid-column: 2/ 3 ;
+    }
+
+    }
+
+    #serv-6{
+        grid-row: 3 / 4;
+        grid-column: 3/ 4 ;
+
+    }
+
+    #serv-7{
+        grid-row: 3 / 4;
+        grid-column: 4/ 5 ;
+    }
+}
+   
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media  screen and (min-width:1280px) {
+
+    .Our-Services{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .25fr .10fr 1fr 1fr 1fr 1fr ;
+        margin: 10px;
+    
+    
+}
+
+    .main-heading{
+        grid-row: 1 / 1;
+        grid-column: 1 / 5 ;
+   
+}
+    .heading-1{
+        grid-row: 2 / 3;
+        grid-column: 1 / 2 ;
+    
+}
+    .heading-2{
+        grid-row: 2 / 3;
+        grid-column: 2 / 3 ;
+
+}
+    .heading-3{
+        grid-row: 2 / 3;
+        grid-column: 3/ 4 ;
+
+}
+
+    .heading-4{
+        grid-row: 2 / 3;
+        grid-column: 4/ 5 ;
+
+}
+
+    #serv-1{
+        grid-row: 3 / 4;
+        grid-column: 1/ 2 ;
+
+    }
+    #serv-2{
+        grid-row: 4 / 5;
+        grid-column: 1/ 2 ;
+
+    }
+
+    #serv-3{
+        grid-row: 5/ 6;
+        grid-column: 1/ 2 ;
+
+    }
+
+    #serv-4{
+        grid-row: 3 / 4;
+        grid-column: 2/ 3 ;
+    }
+
+    #serv-5{
+        grid-row: 4/ 5;
+        grid-column: 2/ 3 ;
+    }
+
+    }
+
+    #serv-6{
+        grid-row: 3 / 4;
+        grid-column: 3/ 4 ;
+
+    }
+
+    #serv-7{
+        grid-row: 3 / 4;
+        grid-column: 4/ 5 ;
+    }
+}
