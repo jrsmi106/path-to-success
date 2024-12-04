@@ -314,6 +314,7 @@ td{
 #first-step {
     background-color: var(--pink);
     color: var(--white);
+    font-family: "Inter";
 }
 button{
     background-color: var(--white);
